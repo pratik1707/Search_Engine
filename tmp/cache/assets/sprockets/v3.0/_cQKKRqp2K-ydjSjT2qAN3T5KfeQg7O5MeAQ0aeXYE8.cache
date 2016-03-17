@@ -1,0 +1,21 @@
+{:uriI"Úfile:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html?type=text/html&id=982e48db55555c991ca666a45a0325c2c9fc4db0f1d89d7e1eae77e1367387a3:EF:load_pathI"app/assets/templates;F:filenameI"0app/assets/templates/dirPagination.tpl.html;F:	nameI"dirPagination.tpl;T:logical_pathI"dirPagination.tpl.html;T:content_typeI"text/html;T:sourceI"ğ<div class="pagination" ng-if="1 < pages.length || !autoHide">
+    <div ng-if="boundaryLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(1)">&laquo;</a>
+    </div>
+    <div ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(pagination.current - 1)">&lsaquo;</a>
+    </div>
+    <div ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)" ng-class="{ active : pagination.current == pageNumber, disabled : pageNumber == '...' }">
+        <a href="" ng-click="setCurrent(pageNumber)">{{ pageNumber }}</a>
+    </div>
+
+    <div ng-if="directionLinks" ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.current + 1)">&rsaquo;</a>
+    </div>
+    <div ng-if="boundaryLinks"  ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.last)">&raquo;</a>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;FTI"file-digest:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html;FT:charsetI"
+utf-8;F:digest"%®ÎJÂ¹?ƒ…o^Ü§ÑO/kÔx½9q¹ „:lengthiğ:dependencies_digest"%o¯júO(ÂŸµ”2Í„bå=_¦çªÉÁJ¾¿L6D»*½:id"E982e48db55555c991ca666a45a0325c2c9fc4db0f1d89d7e1eae77e1367387a3:
+mtimel+—BÅV

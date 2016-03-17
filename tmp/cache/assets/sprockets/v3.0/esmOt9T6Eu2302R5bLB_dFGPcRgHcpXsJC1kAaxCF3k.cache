@@ -1,0 +1,21 @@
+{:uriI"Úfile:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html?type=text/html&id=7eade819931b97f5201cf776a08bf80409f4d9fac2e0fce2ceda03770ceb9120:EF:load_pathI"app/assets/templates;F:filenameI"0app/assets/templates/dirPagination.tpl.html;F:	nameI"dirPagination.tpl;T:logical_pathI"dirPagination.tpl.html;T:content_typeI"text/html;T:sourceI"A<ul style= "list-style-type: none;overflow-x:hidden;white-space:nowrap;height: 1em;width: 100%;" class="pagination" ng-if="1 < pages.length || !autoHide">
+    <li ng-if="boundaryLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(1)">&laquo;</a>
+    </li>
+    <li ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(pagination.current - 1)">&lsaquo;</a>
+    </li>
+    <li ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)" ng-class="{ active : pagination.current == pageNumber, disabled : pageNumber == '...' }">
+        <a href="" ng-click="setCurrent(pageNumber)">{{ pageNumber }}</a>
+    </li>
+
+    <li ng-if="directionLinks" ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.current + 1)">&rsaquo;</a>
+    </li>
+    <li ng-if="boundaryLinks"  ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.last)">&raquo;</a>
+    </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;FTI"file-digest:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html;FT:charsetI"
+utf-8;F:digest"%æ²4F~>ÛU˜I`,°³¢›ªÙÖ>ÅêçÓ4Ğ:lengthiA:dependencies_digest"%¨j>‰úşÖ4|°îŸ›«Æµ}ª“9q¼{3¶Ì:id"E7eade819931b97f5201cf776a08bf80409f4d9fac2e0fce2ceda03770ceb9120:
+mtimel+DÅV

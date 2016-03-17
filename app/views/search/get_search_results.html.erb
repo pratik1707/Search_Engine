@@ -1,0 +1,14 @@
+<ul>
+    <li ng-repeat="result in search_results">
+        {{result.url}}
+    </li>
+</ul>
+<%puts "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" %>
+<%puts @search_data.inspect %>
+<ul>
+    <% @search_data["response"]["docs"].each{|doc| %>
+    <li>
+        <%=doc["url"] %>
+    </li>
+    <%} %>
+</ul>

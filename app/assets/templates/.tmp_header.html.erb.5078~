@@ -1,0 +1,19 @@
+
+<div class="navbar navbar-fixed-top" style="top:2px" >
+	
+    <div class="navbar-inner">
+        <div class="container" >        	
+        	<br>	
+			 <form novalidate class="simple-form">		
+        	<input type="text" style="width:600px" data-ng-model="searchtext" placeholder="Enter Search Text Here"/>
+     		<button ng-click="update(searchtext)" value="Save" ><%=image_tag("/assets/search2.gif", :size=> "60x50", :alt=>'logo') %> </button>
+        </form>
+	
+		</div>
+		
+    </div>
+</div>
+
+
+
+

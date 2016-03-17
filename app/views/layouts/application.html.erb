@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="search_app">
+    <head>
+        <title>SearchApplication</title>
+        <%= stylesheet_link_tag    'application', media: 'all' %>
+        <%= javascript_include_tag 'application' %>
+        <%= stylesheet_link_tag 'bootstrap' %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div ng-include="'/assets/search_main.html'">
+        </div>
+        <%= yield %>
+        <div class="container" ng-view="">
+        </div>
+        <div ng-include="'/assets/footer.html'">
+    </body>
+</html>

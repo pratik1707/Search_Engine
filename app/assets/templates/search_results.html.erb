@@ -1,0 +1,20 @@
+<div ng-if="search_results.length==0">
+    <br>
+    <br>
+    <h1>Results not available for this Search term.</h1>
+</div>
+<div ng-if="search_results.length>0">
+    <h1>Search Results..</h1>
+    <br>
+    <ul>
+        <li dir-paginate="result in search_results | itemsPerPage: 10">
+            <a target="_new" href="{{result.url}}"><b style="font-size:18px;">{{result.name}}</b></a>
+            <br>
+            {{result.desc}}
+            <br>
+            <br>
+        </li>
+    </ul>
+    <dir-pagination-controls template-url="../assets/dirPagination.tpl.html">
+    </dir-pagination-controls>
+</div>

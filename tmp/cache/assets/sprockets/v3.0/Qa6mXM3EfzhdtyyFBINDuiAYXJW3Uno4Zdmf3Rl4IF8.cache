@@ -1,0 +1,23 @@
+{:uriI"⁄file:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html?type=text/html&id=39b9cd805c4b6bcea9e6fd3221469f8e24b282378896bae96e8fdb495f09a1cc:EF:load_pathI"app/assets/templates;F:filenameI"0app/assets/templates/dirPagination.tpl.html;F:	nameI"dirPagination.tpl;T:logical_pathI"dirPagination.tpl.html;T:content_typeI"text/html;T:sourceI"D
+
+<ul class="pagination" ng-if="1 < pages.length || !autoHide">
+    <li class="list-icon" ng-if="boundaryLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(1)">&laquo;</a>
+    </li>
+    <li  class="list-icon" ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(pagination.current - 1)">&lsaquo;</a>
+    </li>
+    <li  class="list-icon" ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)" ng-class="{ active : pagination.current == pageNumber, disabled : pageNumber == '...' }">
+        <a href="" ng-click="setCurrent(pageNumber)">{{ pageNumber }}</a>
+    </li>
+
+    <li  class="list-icon" ng-if="directionLinks" ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.current + 1)">&rsaquo;</a>
+    </li>
+    <li  class="list-icon" ng-if="boundaryLinks"  ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.last)">&raquo;</a>
+    </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;FTI"éfile-digest:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html;FT:charsetI"
+utf-8;F:digest"%'’]f:≈Dò‹¢TÂµ-Æ¡QJ£ê©»xÃÛó•‡6:lengthiD:dependencies_digest"%)¬$çûR¬Øı|d[û–∏Ï,+Á∫|µ∑å”vÖ”;:id"E39b9cd805c4b6bcea9e6fd3221469f8e24b282378896bae96e8fdb495f09a1cc:
+mtimel+K≈V

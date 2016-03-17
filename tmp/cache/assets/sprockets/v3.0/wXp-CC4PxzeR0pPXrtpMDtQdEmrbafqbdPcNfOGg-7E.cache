@@ -1,0 +1,23 @@
+{:uriI"⁄file:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html?type=text/html&id=90ad146ac3784d689f67df2c7a36a96e726d50ca768a3d1acad82f0153911ad2:EF:load_pathI"app/assets/templates;F:filenameI"0app/assets/templates/dirPagination.tpl.html;F:	nameI"dirPagination.tpl;T:logical_pathI"dirPagination.tpl.html;T:content_typeI"text/html;T:sourceI"7
+
+<ul class="pagination" ng-if="1 < pages.length || !autoHide">
+    <li class="list-icon" ng-if="boundaryLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(1)">Prev</a>
+    </li>
+    <li  class="list-icon" ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(pagination.current - 1)">Prev</a>
+    </li>
+    <li  class="list-icon" ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)" ng-class="{ active : pagination.current == pageNumber, disabled : pageNumber == '...' }">
+        <a href="" ng-click="setCurrent(pageNumber)">{{ pageNumber }}</a>
+    </li>
+
+    <li  class="list-icon" ng-if="directionLinks" ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.current + 1)">Next</a>
+    </li>
+    <li  class="list-icon" ng-if="boundaryLinks"  ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.last)">&Next</a>
+    </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;FTI"éfile-digest:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html;FT:charsetI"
+utf-8;F:digest"%eF∑¨õ∏„`(ÂÃÚSM5Ú5/yaYÅ·¸:lengthi7:dependencies_digest"%€P0ÇE¡-?]	^Ü–›b‹w≈[ÛÕ˜«Ã˝ÿˇ	B:id"E90ad146ac3784d689f67df2c7a36a96e726d50ca768a3d1acad82f0153911ad2:
+mtimel+L≈V

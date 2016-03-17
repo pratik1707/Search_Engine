@@ -1,0 +1,23 @@
+{:uriI"Úfile:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html?type=text/html&id=99f289ae11e851a00f8ecd7805abf8f3f6989606cefae5903c8b16ee91f2004a:EF:load_pathI"app/assets/templates;F:filenameI"0app/assets/templates/dirPagination.tpl.html;F:	nameI"dirPagination.tpl;T:logical_pathI"dirPagination.tpl.html;T:content_typeI"text/html;T:sourceI"i
+ <%= stylesheet_link_tag 'bootstrap' %>
+<ul style= "overflow-x:hidden;white-space:nowrap;height: 10em;width: 100%; font-size:20px;" class="pagination" ng-if="1 < pages.length || !autoHide">
+    <li ng-if="boundaryLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(1)">&laquo;</a>
+    </li>
+    <li  ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(pagination.current - 1)">&lsaquo;</a>
+    </li>
+    <li  ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)" ng-class="{ active : pagination.current == pageNumber, disabled : pageNumber == '...' }">
+        <a href="" ng-click="setCurrent(pageNumber)">{{ pageNumber }}</a>
+    </li>
+
+    <li  ng-if="directionLinks" ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.current + 1)">&rsaquo;</a>
+    </li>
+    <li  ng-if="boundaryLinks"  ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.last)">&raquo;</a>
+    </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;FTI"file-digest:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html;FT:charsetI"
+utf-8;F:digest"%"½“õó²±âÀNá£Ş™ıèz9ÌÏØ”Ù%i–:lengthii:dependencies_digest"%ğÛŠ`ñ1AĞYJ¤Ğ„ÂcüÉÁ·j:id"E99f289ae11e851a00f8ecd7805abf8f3f6989606cefae5903c8b16ee91f2004a:
+mtimel+RGÅV

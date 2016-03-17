@@ -1,0 +1,21 @@
+{:uriI"Úfile:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html?type=text/html&id=bf2aaeefb9e6cc3b1abcee7f34e8d9982172b4bc6885dc9e4491a270efd4130e:EF:load_pathI"app/assets/templates;F:filenameI"0app/assets/templates/dirPagination.tpl.html;F:	nameI"dirPagination.tpl;T:logical_pathI"dirPagination.tpl.html;T:content_typeI"text/html;T:sourceI"²<ul style= "list-style-type: none;overflow-x:hidden;white-space:nowrap;height: 10em;width: 100%; font-size:17px;" class="pagination" ng-if="1 < pages.length || !autoHide">
+    <li ng-if="boundaryLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(1)">&laquo;</a>
+    </li>
+    <li style="display:inline;" ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }">
+        <a href="" ng-click="setCurrent(pagination.current - 1)">&lsaquo;</a>
+    </li>
+    <li style="display:inline;" ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)" ng-class="{ active : pagination.current == pageNumber, disabled : pageNumber == '...' }">
+        <a href="" ng-click="setCurrent(pageNumber)">{{ pageNumber }}</a>
+    </li>
+
+    <li style="display:inline;" ng-if="directionLinks" ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.current + 1)">&rsaquo;</a>
+    </li>
+    <li style="display:inline;" ng-if="boundaryLinks"  ng-class="{ disabled : pagination.current == pagination.last }">
+        <a href="" ng-click="setCurrent(pagination.last)">&raquo;</a>
+    </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;FTI"Žfile-digest:///C:/Users/pratik%20malang/Documents/Aptana%20RadRails%20Workspace/search_application/app/assets/templates/dirPagination.tpl.html;FT:charsetI"
+utf-8;F:digest"%>ˆb#iˆd^/níZºo\<U¨´63 U[Žÿ::lengthi²:dependencies_digest"%’)•²h€:‡œ¡*È7ç£ó£²Sïõ‰øˆ‚û£:id"Ebf2aaeefb9e6cc3b1abcee7f34e8d9982172b4bc6885dc9e4491a270efd4130e:
+mtimel+ìDÅV
